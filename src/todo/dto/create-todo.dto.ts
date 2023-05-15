@@ -4,5 +4,10 @@ export class CreateTodoDto {
 
     @IsString()
     @IsNotEmpty()
-    descripcion: string;
+    title: string;
+
+    @IsString()
+    descripcion?: string;
+
+
 }
